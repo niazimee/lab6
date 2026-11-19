@@ -1,0 +1,19 @@
+:root {
+  --bs-primary-bg: #5930a3;
+  --bs-primary-fg: #bd9dff;
+  --bs-primary-fg-emphasis: #e3d4ff;
+  --bs-primary-border: #956de0;
+  --bs-primary-focus-ring: #d2b9ff;
+  --bs-primary-contrast: #ffffff;
+}
+
+.btn-solid.theme-primary {
+  --bs-theme-bg: var(--bs-primary-bg);
+  --bs-theme-border: var(--bs-primary-border);
+  --bs-theme-contrast: var(--bs-primary-contrast);
+}
+
+.site-footer {
+  background-color: var(--bs-primary-bg);
+  color: var(--bs-primary-contrast);
+}

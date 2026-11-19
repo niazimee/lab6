@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Club | Home</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <nav class="navbar md:navbar-expand bg-1" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Gaming Club</a>
+
+      <button type="button" class="btn-icon navbar-toggler"
+        data-bs-toggle="drawer" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+      <dialog class="drawer drawer-end" id="navbarNav" tabindex="-1"
+        aria-labelledby="navbarNavLabel">
+        <div class="drawer-header">
+          <p class="drawer-title" id="navbarNavLabel">Menu</p>
+          <button type="button" class="btn-close"
+            data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="nav navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#current-gaming-sessions">Current Gaming Sessions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main class="container mt-3">
+    <h1>Gaming Club</h1>
+    <p>Meet other gamers and join our gaming sessions!</p>
+
+    <div id="heroCarousel" class="carousel slide">
+      <div class="carousel-inner rounded-5">
+        <div class="carousel-item active">
+          <img src="images/elden ring.jpg" class="d-block w-100"
+            alt="Elden Ring game cover art with a knight in armor and a dragon in the background">
+        </div>
+        <div class="carousel-item">
+          <img src="images/minecraft.jpg" class="d-block w-100"
+            alt="Minecraft game cover art with a blocky character holding a pickaxe in a grassy landscape">
+        </div>
+        <div class="carousel-item">
+          <img src="images/fortnite.jpg" class="d-block w-100"
+            alt="Fortnite game cover art with a character holding a pickaxe and a building tool">
+        </div>
+      </div>
+
+      <div class="carousel-overlay-controls">
+        <button type="button" class="btn-icon btn-sm btn-subtle theme-secondary"
+          data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-icon-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button type="button" class="btn-icon btn-sm btn-subtle theme-secondary"
+          data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-icon-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <section aria-labelledby="current-gaming-sessions">
+      <h2 class="my-5" id="current-gaming-sessions">Current Gaming Sessions</h2>
+
+      <div class="row g-4">
+  <div class="col-12 md:col-6 lg:col-4">
+    <article class="card h-100">
+      <img src="images/marvel rivals.webp" class="card-img-top w-100"
+        alt="Marvel Rivals game graphic">
+      <div class="card-body">
+        <h3 class="card-title">Marvel Rivals</h3>
+        <p class="card-text">Team up as Marvel heroes and villains to capture and defend objectives.</p>
+        <div class="accordion">
+          <details class="accordion-item">
+            <summary class="accordion-header">Details</summary>
+            <div class="accordion-body">
+              Every Monday, 5–8 PM, Room 314. Gaming equipment is provided. Bring your student ID.
+            </div>
+          </details>
+        </div>
+        <button type="button" class="btn-solid theme-primary mt-3"
+          data-bs-toggle="dialog" data-bs-target="#gamingDialog1">Join</button>
+        <dialog class="dialog" id="gamingDialog1" aria-labelledby="gamingTitle1">
+          <div class="dialog-header">
+            <h4 class="dialog-title" id="gamingTitle1">Join Marvel Rivals Game Night</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+              aria-label="Close"></button>
+          </div>
+          <div class="dialog-body">
+            <p><strong>Lock in your spot ASAP!</strong> Use the <a href="contact.html">Contact Us</a> page to request a spot for Monday. Include your favourite hero or preferred role so we can plan the teams before the session.</p>
+          </div>
+        </dialog>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 md:col-6 lg:col-4">
+    <article class="card h-100">
+      <img src="images/roblox.png" class="card-img-top w-100"
+        alt="Roblox game graphic">
+      <div class="card-body">
+        <h3 class="card-title">Roblox</h3>
+        <p class="card-text">Explore player-made games, from obstacle courses to co-op adventures.</p>
+        <div class="accordion">
+          <details class="accordion-item">
+            <summary class="accordion-header">Details</summary>
+            <div class="accordion-body">
+              Every Tuesday, 4–6 PM, Room 314. Gaming equipment is provided. Bring your student ID.
+            </div>
+          </details>
+        </div>
+        <button type="button" class="btn-solid theme-primary mt-3"
+          data-bs-toggle="dialog" data-bs-target="#gamingDialog2">Join</button>
+        <dialog class="dialog" id="gamingDialog2" aria-labelledby="gamingTitle2">
+          <div class="dialog-header">
+            <h4 class="dialog-title" id="gamingTitle2">Join Roblox Game Night</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+              aria-label="Close"></button>
+          </div>
+          <div class="dialog-body">
+            <p><strong>Lock in your spot ASAP!</strong> Request a spot for Tuesday through the <a href="contact.html">Contact Us</a> page. Suggest a Roblox experience you’d like to play so we can pick games that work for the whole group.</p>
+          </div>
+        </dialog>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 md:col-6 lg:col-4">
+    <article class="card h-100">
+      <img src="images/rainbow six siege.jpg" class="card-img-top w-100"
+        alt="Rainbow Six Siege game graphic">
+      <div class="card-body">
+        <h3 class="card-title">Rainbow Six Siege</h3>
+        <p class="card-text">Choose an operator, scout with drones, and coordinate with your squad to attack or defend the objective.</p>
+        <div class="accordion">
+          <details class="accordion-item">
+            <summary class="accordion-header">Details</summary>
+            <div class="accordion-body">
+              Every Wednesday, 6–8 PM, Room 314. Gaming equipment is provided. Bring your student ID.
+            </div>
+          </details>
+        </div>
+        <button type="button" class="btn-solid theme-primary mt-3"
+          data-bs-toggle="dialog" data-bs-target="#gamingDialog3">Join</button>
+        <dialog class="dialog" id="gamingDialog3" aria-labelledby="gamingTitle3">
+          <div class="dialog-header">
+            <h4 class="dialog-title" id="gamingTitle3">Join the Rainbow Six Siege Squad</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+              aria-label="Close"></button>
+          </div>
+          <div class="dialog-body">
+            <p><strong>Lock in your spot ASAP!</strong> Use the <a href="contact.html">Contact Us</a> page to request a spot for Wednesday. Tell us which operator you like playing and whether you’re new to Siege so we can plan the practice rounds.</p>
+          </div>
+        </dialog>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 md:col-6 lg:col-4">
+    <article class="card h-100">
+      <img src="images/warzone.jpg" class="card-img-top w-100"
+        alt="Call of Duty: Warzone game graphic">
+      <div class="card-body">
+        <h3 class="card-title">Call of Duty: Warzone</h3>
+        <p class="card-text">Drop in with your squad, gather gear, and try to outlast other teams as the map shrinks.</p>
+        <div class="accordion">
+          <details class="accordion-item">
+            <summary class="accordion-header">Details</summary>
+            <div class="accordion-body">
+              Every Thursday, 7–10 PM, Room 314. Gaming equipment is provided. Bring your student ID.
+            </div>
+          </details>
+        </div>
+        <button type="button" class="btn-solid theme-primary mt-3"
+          data-bs-toggle="dialog" data-bs-target="#gamingDialog4">Join</button>
+        <dialog class="dialog" id="gamingDialog4" aria-labelledby="gamingTitle4">
+          <div class="dialog-header">
+            <h4 class="dialog-title" id="gamingTitle4">Join Warzone Squad Night</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+              aria-label="Close"></button>
+          </div>
+          <div class="dialog-body">
+            <p><strong>Lock in your spot ASAP!</strong> Request a spot for Thursday through the <a href="contact.html">Contact Us</a> page. Let us know if you prefer Battle Royale or Resurgence and whether you’re coming with a squad or looking for teammates.</p>
+          </div>
+        </dialog>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 md:col-6 lg:col-4">
+    <article class="card h-100">
+      <img src="images/overwatch.jpg" class="card-img-top w-100"
+        alt="Overwatch game graphic">
+      <div class="card-body">
+        <h3 class="card-title">Overwatch</h3>
+        <p class="card-text">Choose a tank, damage, or support hero and combine abilities to win the objective.</p>
+        <div class="accordion">
+          <details class="accordion-item">
+            <summary class="accordion-header">Details</summary>
+            <div class="accordion-body">
+              Every Friday, 6–9 PM, Room 314. Gaming equipment is provided. Bring your student ID.
+            </div>
+          </details>
+        </div>
+        <button type="button" class="btn-solid theme-primary mt-3"
+          data-bs-toggle="dialog" data-bs-target="#gamingDialog5">Join</button>
+        <dialog class="dialog" id="gamingDialog5" aria-labelledby="gamingTitle5">
+          <div class="dialog-header">
+            <h4 class="dialog-title" id="gamingTitle5">Join Overwatch Game Night</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+              aria-label="Close"></button>
+          </div>
+          <div class="dialog-body">
+            <p><strong>Lock in your spot ASAP!</strong> Use the <a href="contact.html">Contact Us</a> page to request a spot for Friday. Include your preferred role and any role you’d like to practise so we can put together balanced teams.</p>
+          </div>
+        </dialog>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 md:col-6 lg:col-4">
+    <article class="card h-100">
+      <img src="images/dark souls 3.jpg" class="card-img-top w-100"
+        alt="Dark Souls III game graphic">
+      <div class="card-body">
+        <h3 class="card-title">Dark Souls III</h3>
+        <p class="card-text">Explore Lothric, experiment with weapon builds, and learn boss attack patterns.</p>
+        <div class="accordion">
+          <details class="accordion-item">
+            <summary class="accordion-header">Details</summary>
+            <div class="accordion-body">
+              Every Saturday, 2–5 PM, Room 314. Gaming equipment is provided. Bring your student ID.
+            </div>
+          </details>
+        </div>
+        <button type="button" class="btn-solid theme-primary mt-3"
+          data-bs-toggle="dialog" data-bs-target="#gamingDialog6">Join</button>
+        <dialog class="dialog" id="gamingDialog6" aria-labelledby="gamingTitle6">
+          <div class="dialog-header">
+            <h4 class="dialog-title" id="gamingTitle6">Join Dark Souls III Boss Runs</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+              aria-label="Close"></button>
+          </div>
+          <div class="dialog-body">
+            <p><strong>Lock in your spot ASAP!</strong> Request a spot for Saturday through the <a href="contact.html">Contact Us</a> page. Tell us which boss you’re working on and whether you want strategy tips or a co-op partner.</p>
+          </div>
+        </dialog>
+      </div>
+    </article>
+  </div>
+</div>
+
+  <footer class="site-footer container mt-5 py-3 text-center">
+    <small>&copy; 2026 Gaming Club</small>
+  </footer>
+</body>
+</html> 

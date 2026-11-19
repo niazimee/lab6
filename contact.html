@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Club | Home</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <nav class="navbar md:navbar-expand bg-1" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Gaming Club</a>
+
+      <button type="button" class="btn-icon navbar-toggler"
+        data-bs-toggle="drawer" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+      <dialog class="drawer drawer-end" id="navbarNav" tabindex="-1"
+        aria-labelledby="navbarNavLabel">
+        <div class="drawer-header">
+          <p class="drawer-title" id="navbarNavLabel">Menu</p>
+          <button type="button" class="btn-close"
+            data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="nav navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#current-gaming-sessions">Current Gaming Sessions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+<main class="container mt-5">
+  <h1>Contact Us</h1>
+
+  <form>
+    <div class="row g-4">
+      <div class="form-field col-12 md:col-6">
+        <label for="first-name" class="form-label">First name</label>
+        <input type="text" class="form-control" id="first-name"
+          autocomplete="given-name" required>
+      </div>
+
+      <div class="form-field col-12 md:col-6">
+        <label for="last-name" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="last-name"
+          autocomplete="family-name" required>
+      </div>
+
+      <div class="form-field col-12 md:col-6">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email"
+          placeholder="name@example.com" autocomplete="email" required>
+      </div>
+
+      <div class="form-field col-12 md:col-6">
+        <label for="topic" class="form-label">Topic</label>
+        <select class="form-control" id="topic" required>
+          <option value="">Choose a topic</option>
+          <option value="booking">Join a gaming session</option>
+          <option value="availability">Suggest a game</option>
+          <option value="general">General question</option>
+        </select>
+      </div>
+
+      <div class="form-field col-12 md:col-6">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="5" required></textarea>
+      </div>
+
+      <div class="form-field col-12 md:col-6">
+        <input type="checkbox" class="check" id="consent" required>
+        <label for="consent">I agree to be contacted about my message.</label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-solid theme-primary mt-4">Submit</button>
+  </form>
+</main>
+
+<footer class="site-footer container mt-5 py-3 text-center">
+  <small>&copy; 2026 Gaming Club</small>
+</footer>
+
+</body>
+</html>
